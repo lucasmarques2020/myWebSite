@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Lucas Marques Bandeira</title>
+    <link rel="icon" type="image/x-icon" href="assets/icon/logo.png" />
+    <link rel="stylesheet" href="http://code.jquery.com/qunit/qunit-1.11.0.css" type="text/css" media="all">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <div class="father-body container-fluid">
+        <div class="row">
+            <div class="nav-bar col-12">
+                <div class="lista">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#" onclick="alterar_p_about();">About</a></li>
+                        <li><a href="#" onclick="alterar_p_portfolio();">Portfolio</a></li>
+                    </ul>
+                </div>
+                <div class="social">
+                    <a href="mailto:lucas.marques.bandeira@gmail.com?subject=Hello%20again" target="_blank"><img src="assets/icon/1.1.png"></a>
+                    <a href="https://github.com/lucasmarques2020" target="_blank"><img src="assets/icon/2.2.png"></a>
+                    <a href="https://br.linkedin.com/in/lucas-marques-bandeira-452440113" target="_blank"><img src="assets/icon/3.3.png"></a>
+                </div>
+            </div>
+        </div>
+        <div class="cont-main">
+            <div class="inner row" id="home">
+                <div class="div_Da_img embed-responsive-item">
+                        <img src="assets/bg/bk.jpg">
+                </div>
+
+                <div class="container-text col-xl-12">
+                    <h1>Wellcome my website!</h1>
+                    <h2>Hi, my names is Lucas Marques. I'm graphic design.</h2>
+                    <button href="#send" onclick="alterar_p_send();">Send your menssage our order</button>
+                    <button href="#about" onclick="alterar_p_portfolio();">Portfolio</button>
+                </div>
+            </div>
+            <div class=" container-about container-fluid " id="about">
+                <div class="about-h1 row">
+                    <h1>About</h1>
+                </div>
+                <div class="about row">
+                    <div class="row" >
+                        <img class="col-md-12" src="assets/about/image.png" >
+                    </div>
+                    <div class="row justify-content-center align-items-center" >
+                        <p class="col-md-10 text-justify">Hi! Are you all right? My name is Lucas Marques Bandeira. I am 23 
+                        years old and I am studying Computer Science at IFCE - Federal 
+                        Institute of Education, Science and Technology of Ceará / Campus 
+                        Aracati / Ce. I work in the area of ​​Graphic Design for 4 years. My 
+                        specialty is inkscape and gimp. I also work in web development on 
+                        the front-end. I develop web applications using HTML, CSS, JS and the 
+                        Bootstrap Frameworks and Vue.js. With the focus on the front-end, 
+                        i create many layouts beautiful and interactive. Stay a few 
+                        more and see my work in the "Portfolio"area. Until later!</p>
+                    </div>
+                    <button type="button" class="btn btn-dark mb-3"><a href = "document/MY_CV.pdf" target="_blank">DOWNLOAD CV</a></button>
+                </div>
+            </div>
+            <div class="container-portfolio container-fluid" id="portfolio">
+                <div class="container-portfolio row">
+                    <h1>Portfolio</h1>
+                </div>
+                <div class="portfolio">
+                    <section class="container-md">
+                        <ul class="row">
+                            <li class="list active col-md-1" data-filter="All">All</li>
+                            <li class="list col-md-1" data-filter="Marketing_Design">Marketing Design</li>
+                            <li class="list col-md-1" data-filter="WebDesign">Web Design</li>
+                            <li class="list col-md-1" data-filter="Logos">Logos</li>
+                            <li class="list col-md-1" data-filter="T-shirts">T-shirts</li>
+                            <li class="list col-md-1" data-filter="Cards">Cards</li>
+                            <li class="list col-md-1" data-filter="Others">Others</li>
+                        </ul>
+                    </section>
+                    <div class="product">
+                        <div class="global">
+                            <div class="itemBox Others"><img class="img-fluid" src="assets/about/1.png " class="img-fluid col-6">
+                                <div class='ti'>CUP RICK AND MORTY</div>
+                            </div>
+                        </div>
+                        <div class="global">
+                            <div class="itemBox T-shirts"><img class="img-fluid" src="assets/about/4.png" class="img-fluid col-6">
+                                <div class='ti'>T-SHIRTS RICK AND MORTY</div>
+                            </div>
+                        </div>
+                        <div class="global">
+                            <div class="itemBox T-shirts"><img class="img-fluid" src="assets/about/28.png" class="img-fluid col-6">
+                                <div class='ti'>T-SHIRTS RICK</div>
+                            </div>
+                        </div>
+                        <div class="global">
+                            <div class="itemBox T-shirts"><img class="img-fluid" src="assets/about/5.png" class="img-fluid col-6">
+                                <div class='ti'>T-SHIRTS PYLADIES ARACATI</div>
+                            </div>
+                        </div>
+                        <div class="global">
+                            <div class="itemBox Others"><img class="img-fluid" src="assets/about/27.png" class="img-fluid col-6">
+                                <div class='ti'>CUP KENNY</div>
+                            </div>
+                        </div>
+                        <div class="global">
+                            <div class="itemBox Others"><img class="img-fluid" src="assets/about/26.png" class="img-fluid col-6">
+                                <div class='ti'>MASK BART</div>
+                            </div>
+                        </div>
+                        <div class="global">
+                            <div class="itemBox Logos"><img class="img-fluid" src="assets/about/7.png" class="img-fluid col-6">
+                                <div class='ti'>LOGO LUCAS MARQUES</div>
+                            </div>
+                        </div>
+                        <div class="global">
+                            <div class="itemBox T-shirts"><img class="img-fluid" src="assets/about/29.png" class="img-fluid col-6">
+                                <div class='ti'>T-SHIRTS HOMER</div>
+                            </div>
+                        </div>
+                        <div class="global">
+                            <div class="itemBox WebDesign"><img class="img-fluid" src="assets/about/8.png" class="img-fluid col-6">
+                                <div class='ti'>WEB SITE AIVOZ</div>
+                            </div>
+                        </div>
+                        <div class="global">
+                            <div class="itemBox WebDesign"><img class="img-fluid" src="assets/about/14.png" class="img-fluid col-6">
+                                <div class='ti'>WEB SITE LPHOTEL</div>
+                            </div>
+                        </div>
+                        <div class="global">
+                            <div class="itemBox Logos"><img class="img-fluid" src="assets/about/9.png" class="img-fluid col-6">
+                                <div class='ti'>LOGO CLEIA</div>
+                            </div>
+                        </div>
+                        <div class="global">
+                            <div class="itemBox Logos"><img class="img-fluid" src="assets/about/18.png" class="img-fluid col-6">
+                                <div class='ti'>LOGO DEYSE RODRIGUES</div>
+                            </div>
+                        </div>
+                        <div class="global">
+                            <div class="itemBox Marketing_Design"><img class="img-fluid" src="assets/about/10.png" class="img-fluid col-6">
+                                <div class='ti'>DIGITAL MARKETING</div>
+                            </div>
+                        </div>
+                        <div class="global">
+                            <div class="itemBox Others"><img class="img-fluid" src="assets/about/11.png" class="img-fluid col-6">
+                                <div class='ti'>LAYOUT PREVIEW</div>
+                            </div>
+                        </div>
+                        <div class="global">
+                            <div class="itemBox Others"><img class="img-fluid" src="assets/about/12.png" class="img-fluid col-6">
+                                <div class='ti'>LAYOUT PREVIEW</div>
+                            </div>
+                        </div>
+                        <div class="global">
+                            <div class="itemBox Others"><img class="img-fluid" src="assets/about/13.png" class="img-fluid col-6">
+                                <div class='ti'>LAYOUT PREVIEW</div>
+                            </div>
+                        </div>
+                        <div class="global">
+                            <div class="itemBox Logos"><img class="img-fluid" src="assets/about/15.png" class="img-fluid col-6">
+                                <div class='ti'>LOGO LPHOTEL</div>
+                            </div>
+                        </div>
+                        <div class="global">
+                            <div class="itemBox Others"><img class="img-fluid" src="assets/about/16.png" class="img-fluid col-6">
+                                <div class='ti'>LAYOUT MOBILE</div>
+                            </div>
+                        </div>
+                        <div class="global">
+                            <div class="itemBox Marketing_Design"><img class="img-fluid" src="assets/about/17.png" class="img-fluid col-6">
+                                <div class='ti'>DIGITAL MARKETING</div>
+                            </div>
+                        </div>
+                        <div class="global">
+                            <div class="itemBox Logos"><img class="img-fluid" src="assets/about/19.png" class="img-fluid col-6">
+                                <div class='ti'>LOGO LAUNCHER TECH</div>
+                            </div>
+                        </div>
+                        <div class="global">
+                            <div class="itemBox Cards"><img class="img-fluid" src="assets/about/20.png" class="img-fluid col-6">
+                                <div class='ti'>LOGO LAUNCHER TECH</div>
+                            </div>
+                        </div>
+                        <div class="global">
+                            <div class="itemBox T-shirts"><img class="img-fluid" src="assets/about/21.png" class="img-fluid col-6">
+                                <div class='ti'>T-SHIRTS RICK AND MORTY</div>
+                            </div>
+                        </div>
+                        <div class="global">
+                            <div class="itemBox T-shirts"><img class="img-fluid" src="assets/about/22.png" class="img-fluid col-6">
+                                <div class='ti'>T-SHIRTS RICK AND MORTY</div>
+                            </div>
+                        </div>
+                        <div class="global">
+                            <div class="itemBox Others"><img class="img-fluid" src="assets/about/23.png" class="img-fluid col-6">
+                                <div class='ti'>FRAME RICK AND MORTY</div>
+                            </div>
+                        </div>
+                        <div class="global">
+                            <div class="itemBox WebDesign"><img class="img-fluid" src="assets/about/24.png" class="img-fluid col-6">
+                                <div class='ti'>WEB SITE DEYSE RODRIGUES </div>
+                            </div>
+                        </div>
+                        <div class="global">
+                            <div class="itemBox Cards"><img class="img-fluid" src="assets/about/25.png" class="img-fluid col-6">
+                                <div class='ti'>CARD LS BOUTIQUE</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-send" id="send">
+                
+                <form >
+                    <div class="form-row">
+                        <div class="col-md-6 mb-3">
+                            <label for="validationServer01">Name</label>
+                            <input id = "nome" type="text" class="form-control" placeholder="Your name">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="validationServerUsername">Email</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="inputGroupPrepend3">@</span>
+                                </div>
+                                <input id = "email" type="text" class="form-control" placeholder="Your email">
+                            </div>
+                        </div>
+                        <div class="input-group col-md-12 mb-3">
+                            <div class="input-group-prepend">
+                            </div>
+                            <textarea id = "texto"class="form-control" aria-label="With textarea" placeholder="Your text here!"></textarea>
+                        </div>
+                    </div>
+                    <button id = "enviar" class="btn">Send</button>
+                </form>
+                <!-- Modal -->
+                <div class="modal fade" id="sendmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Email Sent</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                           Email sent successfully!
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <!-- Fim Modal -->
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.list').click(function() {
+                const value = $(this).attr('data-filter');
+                if (value == 'All') {
+                    $('.itemBox').show('1000');
+                } else {
+                    $('.itemBox').not('.' + value).hide('1000');
+                    $('.itemBox').filter('.' + value).show('1000');
+                }
+            })
+            $('.list').click(function() {
+                $(this).addClass('active').siblings().removeClass('active');
+            })
+        })
+        function closeModal(){
+                console.log("minu");
+                var myModal = new bootstrap.Modal(document.getElementById('sendmodal'), {
+                })
+                myModal.hide();
+                console.log("123");
+        }
+    </script>
+    <script src="js/scripts.js "></script>
+    <script>
+        let itemBox = document.querySelectorAll('.itemBox');
+        itemBox.forEach(popup => popup.addEventListener('click', ()=>{
+            popup.classList.toggle('active');
+        }));
+        function alterar_p_about() {
+            const al1 = document.getElementById("about");
+            const al2 = document.getElementById("portfolio");
+            const al3 = document.getElementById("home");
+            const al4 = document.getElementById("send");
+            al1.style.display = "block";
+            al2.style.display = "none";
+            al3.style.display = "none";
+            al4.style.display = "none";
+        }
+
+        function alterar_p_portfolio() {
+            const al1 = document.getElementById("about");
+            const al2 = document.getElementById("portfolio");
+            const al3 = document.getElementById("home");
+            const al4 = document.getElementById("send");
+            al1.style.display = "none";
+            al2.style.display = "block";
+            al3.style.display = "none";
+            al4.style.display = "none";
+        }
+
+        function alterar_p_home() {
+            const al1 = document.getElementById("about");
+            const al2 = document.getElementById("portfolio");
+            const al3 = document.getElementById("home");
+            const al4 = document.getElementById("send");
+            al1.style.display = "none";
+            al2.style.display = "none";
+            al3.style.display = "flex";
+            al4.style.display = "none";
+        }
+
+        function alterar_p_send() {
+            const al1 = document.getElementById("about");
+            const al2 = document.getElementById("portfolio");
+            const al3 = document.getElementById("home");
+            const al4 = document.getElementById("send");
+            al1.style.display = "none";
+            al2.style.display = "none";
+            al3.style.display = "none";
+            al4.style.display = "block";
+        }
+        $("#enviar").click(  
+                function(){
+                    if(document.getElementById("nome").value === ""){
+                        alert("Preencha o campo nome!");
+                        return;
+                        }
+                    if(document.getElementById("email").value === ""){
+                        alert("Preencha o campo email!");
+                        return;
+                        }
+                    if(document.getElementById("texto").value === ""){
+                        alert("Preencha o campo texto!");
+                        return;
+                        }
+                document.getElementById("enviar").disabled = true;
+                  Email.send({
+                    Host : "smtp.gmail.com",
+                    port: 465,
+                    Username : "deyse.contato.nutri@gmail.com",
+                    Password : "mneotgdfxqghjnxy",
+                    To : 'lucas.marques.bandeira@gmail.com',
+                    From : document.getElementById("email").value,
+                    Subject : "MENSAGEM DO USUÁRIO: "+document.getElementById("nome").value,
+                    Body : "TEXTO: "+document.getElementById("texto").value})                        
+                  .then( message =>{
+                      document.getElementById("enviar").disabled = false;
+                      
+                      var myModal = new bootstrap.Modal(document.getElementById('sendmodal'),{})
+                        myModal.show();
+
+                       document.getElementById("nome").value = "";
+                        document.getElementById("email").value = "";
+                            document.getElementById("texto").value = ""
+                        })
+                  .catch(err => alert(err))
+                });
+    </script>
+
+    <!-- Bootstrap core JS-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js "></script>
+    <!-- Third party plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js "></script>
+    <!-- Core theme JS-->
+
+
+</body>
+
+</html>
